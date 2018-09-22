@@ -1,9 +1,11 @@
 import React from 'react';
-
+import Header from './../Header/Header';
+import Footer from '../Footer/Footer';
 const Full = props => (
-    <div>
-      <h1>Alt</h1>
-      {props.children}
+    <div className="app">  
+      <Header {...props}/> 
+        {props.children}
+      <Footer />
     </div>
   );
 
