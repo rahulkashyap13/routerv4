@@ -1,0 +1,22 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 11;
+    min-height: 70px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.bodySection {
+    margin-top: 73px;
+}
+
+.theme-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
