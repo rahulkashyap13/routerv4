@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Navbar, Nav, NavItem } from 'react-bootstrap';
+import {Navbar} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -27,14 +27,14 @@ class Header extends Component {
             <NavLink  to="/about" exact> About</NavLink>
           </li>
         </ul>       
-        <Nav pullRight>
-          <NavItem eventKey={1} >
-            Link Right
-          </NavItem>
-          <NavItem eventKey={2} >
-            Link Right
-          </NavItem>
-        </Nav>
+        <ul className="nav navbar-nav navbar-right">          
+          <li role="presentation" activeclassname="active">
+            <NavLink to="/login" exact> Login</NavLink>
+          </li>
+          <li role="presentation" activeclassname="active">
+            <NavLink  to="/about" exact> Registration</NavLink>
+          </li>          
+        </ul>
       </Navbar.Collapse>
     </Navbar>
     );
